@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-between">
+        <div id="highscore"> View Highscore</div>
+        <div class="time">Time: <span class="seconds">0</span></div>
+    </div>
+    <div id="scontainer">
+        <br>
+        <br>
+        <h1>Coding Quiz Challenge</h1>
+        <p id="note">
+            Try to answer the following code related questions within the time
+            limit. Keep in mind that incorrect answer will penalize your scoretime
+            by ten seconds!
+        </p>
+        <br>
+        <button id="startbtn">Start Quiz</button>
+    </div>
+    <div id="qcontainer">
+        <br>
+        <br>
+        <p id="question">
+        </p>
+        <br>
+        <ol id="choiceList"></ol>
+        <hr>
+        <p id="okorno"></p>
+    </div>
+    <div id="icontainer">
+        <br>
+        <br>
+        <h1>All done!</h1>
+        <div id="finalscore">Your final score is <span id="score">0</span></div>
+        <br>
+        <div id="initial">Enter Initials<input id="ini"></input><button id="submitbtn" type="submit">Submit</button>
+        </div>
+        <br>
+    </div>
+    <div id="hcontainer">
+        <br>
+        <br>
+        <h1 id="hscore">Highscores</h1>
+        <br>
+        <ol id="highscoreList"></ol>
+        <div class="d-flex justify-content-between">
+            <button id="gobackbtn" type="submit">Go Back</button>
+            <button id="clearbtn" type="submit">Clear Highscore</button>
+            <!--         
+                    <button class="btn btn-danger btn-lg" id="genpw" type="submit">Generate Password</button>
+                    <button class="btn btn-secondary btn-lg" id="coppw" type="submit" disabled>Copy to Clipboard</button> -->
+        </div>
+
+        <br>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./questions.js"></script>
+</body>
+
+</html>

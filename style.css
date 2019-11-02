@@ -1,0 +1,21 @@
+#scontainer, #icontainer, #hscore{
+    text-align: center;
+}
+#note{    
+    margin: auto;
+    width: 500px;
+    word-wrap: normal;
+    text-align: center;
+}
+#question{
+    font-weight: bold;
+}
+#startbtn, #submitbtn, #clearbtn, #gobackbtn{
+    background: purple;
+    color: white;
+}
+#choiceList{
+    background: purple;
+    color: white;
+    width: 150px;
+}
